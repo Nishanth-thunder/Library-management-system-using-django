@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library management system</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+</head>
+<body style="text-align:center;">
+
+<h2 style="text-align:center;">WELCOME TO LIBRARY MANAGEMENT SYSTEM!</h2>
+
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/330px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg">
+</br>
+<br>
+<marquee><h4 class="text-danger">Hello! Namaste! Swagatam! Vanakkam !</h4></marquee>
+</br>
+<form action="s/" method="POST">
+     {% csrf_token %}
+    <br>
+    <label>Name :</label>
+    <input type="text" name="name">
+    </br>
+        <br>
+      <label >Email address:</label>
+      <input type="email"  placeholder="Enter email" name="email">
+</br>
+
+<br>
+      <label >Password:</label>
+      <input type="password" placeholder="Password" name="pwd">
+</br>
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>

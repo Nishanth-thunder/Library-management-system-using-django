@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library management system</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+</head>
+<body style="text-align:center;">
+
+<h2 >WELCOME TO LIBRARY MANAGEMENT SYSTEM!</h2>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/330px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg">
+</br>
+<br>
+<marquee><h4 class="text-danger">Hello! Namaste! Swagatam! Vanakkam !</h4></marquee>
+</br>
+<h5 class="text-secondary">An integrated library system, also known as a library management system, is an enterprise resource planning system for a library.Library management systems are designed to manage the movement of books and maintain records of the members in a library. The software solution is designed based on the system requirements, the people involved, the content of the operation and the activity to be performed.</h5>
+<br>
+<form action="stu/" method="post">
+    {% csrf_token %}
+<button type="submit" class="btn btn-primary">Student</button>
+</form>
+</br>
+<form action="ad/" method="post">
+    {% csrf_token %}
+<button type="submit" class="btn btn-danger">Admin</button>
+</form>
+
+</body>
+</html>

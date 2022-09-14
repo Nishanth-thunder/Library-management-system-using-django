@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD 📑📑</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+</head>
+<body style="text-align:center;">
+
+<h2 >WELCOME TO LIBRARY MANAGEMENT SYSTEM!</h2>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/330px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg">
+</br>
+<br>
+<marquee><h4 class="text-danger">Hello! Namaste! Swagatam! Vanakkam !</h4><h4 class="text-success">WELCOME USER</h4></marquee>
+</br>
+<form action="ins/" method="post">
+    {% csrf_token %}
+    <h3 class="text-warning"><u>Insertion</u></h3>
+    <br>
+     <label >Enter ID: </label>
+      <input type="number" name="id">
+    </br>
+    <br>
+    <label>Enter book name:</label>
+    <input type="text" name="bname">
+    </br>
+    <br>
+    <label>Enter book author:</label>
+    <input type="text" name="bauthor">
+    </br>
+    <br>
+    <label>Enter book type:</label>
+    <input type="text" name="btype">
+    </br>
+<button type="submit" class="btn btn-primary">INSERT DATA</button>
+</form>
+<h4>-------------------------------------------------------</h4>
+<h3 class="text-warning"><u>Updation</u></h3>
+<form action="upt/" method="post">
+    {% csrf_token %}
+    <br>
+    <label >Enter ID: </label>
+      <input type="number" name="id">
+    </br>
+    <br>
+    <label>Enter book name:</label>
+    <input type="text" name="bname">
+    </br>
+    <br>
+    <label>Enter book author:</label>
+    <input type="text" name="bauthor">
+    </br>
+    <br>
+    <label>Enter book type:</label>
+    <input type="text" name="btype">
+    </br>
+<button type="submit" class="btn btn-secondary">UPDATE DATA</button>
+</form>
+<h4>--------------------------------------------------------</h4>
+<h3 class="text-warning"><u>Display</u></h3>
+<form action="sh/" method="post">
+    {% csrf_token %}
+<button type="submit" class="btn btn-success">SHOW</button>
+</form>
+<h4>-------------------------------------------------------</h4>
+<h3 class="text-warning"><u>Deletion</u></h3>
+<form action="del/" method="post">
+    {% csrf_token %}
+    <br>
+      <label >Enter ID: </label>
+      <input type="number" name="id">
+    </br>
+<button type="submit" class="btn btn-info">DELETE DATA</button>
+</form>
+</body>
+</html>
